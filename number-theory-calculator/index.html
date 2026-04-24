@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Number Theory Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Number Theory Calculator</h1>
+
+<div class="container">
+
+    <!-- GCD & LCM -->
+    <div class="card">
+        <h2>GCD & LCM</h2>
+
+        <label>Number A</label>
+        <input type="number" id="a" placeholder="Enter a">
+
+        <label>Number B</label>
+        <input type="number" id="b" placeholder="Enter b">
+
+        <div class="btns">
+            <button onclick="calcGCD()">GCD</button>
+            <button onclick="calcLCM()">LCM</button>
+        </div>
+
+        <p id="gcdResult"></p>
+        <p id="lcmResult"></p>
+    </div>
+
+    <!-- Prime Check -->
+    <div class="card">
+        <h2>Prime Check</h2>
+        <input type="number" id="primeInput" placeholder="Enter number">
+        <button onclick="checkPrime()">Check</button>
+        <p id="primeResult"></p>
+    </div>
+
+    <!-- Modular Arithmetic -->
+    <div class="card">
+        <h2>Modular Arithmetic</h2>
+        <input type="number" id="x" placeholder="a">
+        <input type="number" id="y" placeholder="b / power">
+        <input type="number" id="mod" placeholder="mod">
+
+        <button onclick="modAdd()">Add</button>
+        <button onclick="modMul()">Multiply</button>
+        <button onclick="modPow()">Power</button>
+
+        <p id="modResult"></p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
